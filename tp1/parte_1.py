@@ -43,3 +43,16 @@ class MinHeap:
         self.heap.pop()
         self._heapify_down(0)
         return root
+
+
+min_heap = MinHeap()
+min_heap.insert(10)
+min_heap.insert(5)
+min_heap.insert(15)
+min_heap.insert(2)
+min_heap.insert(8)
+
+print("Heap após inserções:", min_heap.heap)
+
+print("Removendo o menor elemento:", min_heap.pop())  
+print("Heap após remoção:", min_heap.heap)
